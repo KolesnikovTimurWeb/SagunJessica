@@ -1,0 +1,148 @@
+:root{
+	--biggest-font-size: 100px;
+
+	--h1-font-size: 80px;
+	--h2-font-size: 60px;
+	--h3-font-size:26px;
+	--normal-p-font-size:18px ;
+	--small-font-size: 14px;
+
+
+	--container-width-pc:90%;
+	--container-width-phone:95%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+   font-family: 'Caveat';
+}
+
+html{
+	scroll-behavior: smooth;
+
+}
+
+
+main{
+   overflow-x: hidden;
+}
+body{
+	overflow-x: hidden;
+   background-color: #1C2121;
+   color: #fff;
+
+
+}
+img,svg,
+video{
+	max-width: 100%;
+	height: auto;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+h1,h2,h3{
+	font-weight: 600;
+}
+button,
+input {
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+.container{
+	max-width: var(--container-width-pc);
+	margin: 0 auto;
+}
+.section{
+	padding: 100px 0;
+}
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   margin-top: 20PX;
+   width: 100%;
+}
+.header-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 40px;
+}
+.header-link{
+   font-size: 26px;
+   font-weight: 500;
+   color: #fff;
+   margin: 0 50px;
+}
+.header-container img{
+   width: 50px;
+   height: 50px;
+}
+
+.global{
+   height: 100vh;
+
+}
+.global-container button{
+   padding: 20px;
+   border: 1px solid #fff;
+   background-color: transparent;
+   color: #fff;
+   font-size: 24px;
+
+}
+.global-container input{
+   background-color: #1C2121;
+   color: #fff;
+   font-size: 24px;
+   padding: 20px;
+   width: 100%;
+}
+.global-container form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   width: 50%;
+
+}
+.global-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 30px;
+}
+.global-container h1{
+   font-weight: 700;
+   font-size: 80px;
+   margin-bottom: 30px;
+}
+.global-container h2{
+   font-weight: 500;
+   font-size: 50px;
+   opacity: 0.6;
+}
+.global-bacround video{
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   left: 0;
+   top: 0;
+   object-fit: cover;
+   z-index: -100;
+}
